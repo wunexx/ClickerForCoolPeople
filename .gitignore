@@ -1,0 +1,28 @@
+# Ignore Unity-generated files
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uilds?/
+[Ll]ogs/
+[Uu]serSettings/
+
+# Ignore VS/IDE junk
+.vscode/
+.idea/
+*.csproj
+*.sln
+*.user
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+
+# Ignore cache & packages
+sysinfo.txt
+*.unitypackage
+
+# Exclude ALL other builds but keep our WebBuild
+[Bb]uild/
+[Bb]uilds/
+!WebBuild/
