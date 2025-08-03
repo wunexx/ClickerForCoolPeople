@@ -5,13 +5,14 @@ using UnityEngine.UI;
 public class Clicker : MonoBehaviour
 {
     [Header("Click")]
-    [SerializeField] float givenPerClick;
+    [SerializeField] float givenPerClick = 1;
 
     [Header("Other")]
     [SerializeField] TextMeshProUGUI amountText;
     [SerializeField] LayerMask buttonLayer;
     [SerializeField] GameObject effectPrefab;
     [SerializeField] Animator animator;
+    [SerializeField] SecretBossSpawner secretBossSpawner;
 
     [Header("Audio")]
     [SerializeField] AudioSource clickAudioSource;
@@ -38,12 +39,22 @@ public class Clicker : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector3.forward, Mathf.Infinity, buttonLayer);
-            if (hit)
+            if (!hit) return;
+
+            if (hit.collider.CompareTag("Main Button"))
             {
-                Click(givenPerClick);
+                ClickAndDamage(givenPerClick);
             }
         }
         UpdateUI();
+    }
+    public void ClickAndDamage(float amount)
+    {
+        Click(amount);
+        if (secretBossSpawner.currentBoss != null)
+        {
+            secretBossSpawner.currentBoss.GetComponent<Enemy>().TakeDamage(amount);
+        }
     }
     public bool CanSubtract(float amount)
     {

@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\For games\\WLADZIO CLICKER\\WladzioClicker\\ClickerForCoolPeople\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{91630016-1546-F3BC-1941-F0EE4DDBFC70}|Assembly-CSharp.csproj|C:\\For games\\WLADZIO CLICKER\\WladzioClicker\\ClickerForCoolPeople\\assets\\scripts\\clicker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91630016-1546-F3BC-1941-F0EE4DDBFC70}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\clicker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91630016-1546-F3BC-1941-F0EE4DDBFC70}|Assembly-CSharp.csproj|C:\\For games\\WLADZIO CLICKER\\WladzioClicker\\ClickerForCoolPeople\\assets\\scripts\\secretbossspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91630016-1546-F3BC-1941-F0EE4DDBFC70}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\secretbossspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91630016-1546-F3BC-1941-F0EE4DDBFC70}|Assembly-CSharp.csproj|c:\\for games\\wladzio clicker\\wladzioclicker\\clickerforcoolpeople\\assets\\scripts\\finger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91630016-1546-F3BC-1941-F0EE4DDBFC70}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\finger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91630016-1546-F3BC-1941-F0EE4DDBFC70}|Assembly-CSharp.csproj|C:\\For games\\WLADZIO CLICKER\\WladzioClicker\\ClickerForCoolPeople\\assets\\scripts\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91630016-1546-F3BC-1941-F0EE4DDBFC70}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91630016-1546-F3BC-1941-F0EE4DDBFC70}|Assembly-CSharp.csproj|C:\\For games\\WLADZIO CLICKER\\WladzioClicker\\ClickerForCoolPeople\\assets\\scripts\\secretboss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91630016-1546-F3BC-1941-F0EE4DDBFC70}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\secretboss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Finger.cs",
+              "DocumentMoniker": "C:\\For games\\WLADZIO CLICKER\\WladzioClicker\\ClickerForCoolPeople\\Assets\\Scripts\\Finger.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Finger.cs",
+              "ToolTip": "C:\\For games\\WLADZIO CLICKER\\WladzioClicker\\ClickerForCoolPeople\\Assets\\Scripts\\Finger.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Finger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T14:46:52.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SecretBoss.cs",
+              "DocumentMoniker": "C:\\For games\\WLADZIO CLICKER\\WladzioClicker\\ClickerForCoolPeople\\Assets\\Scripts\\SecretBoss.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SecretBoss.cs",
+              "ToolTip": "C:\\For games\\WLADZIO CLICKER\\WladzioClicker\\ClickerForCoolPeople\\Assets\\Scripts\\SecretBoss.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SecretBoss.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T13:49:46.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "C:\\For games\\WLADZIO CLICKER\\WladzioClicker\\ClickerForCoolPeople\\Assets\\Scripts\\Enemy.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy.cs",
+              "ToolTip": "C:\\For games\\WLADZIO CLICKER\\WladzioClicker\\ClickerForCoolPeople\\Assets\\Scripts\\Enemy.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T13:35:02.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SecretBossSpawner.cs",
+              "DocumentMoniker": "C:\\For games\\WLADZIO CLICKER\\WladzioClicker\\ClickerForCoolPeople\\Assets\\Scripts\\SecretBossSpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SecretBossSpawner.cs",
+              "ToolTip": "C:\\For games\\WLADZIO CLICKER\\WladzioClicker\\ClickerForCoolPeople\\Assets\\Scripts\\SecretBossSpawner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SecretBossSpawner.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T12:40:17.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Clicker.cs",
+              "DocumentMoniker": "C:\\For games\\WLADZIO CLICKER\\WladzioClicker\\ClickerForCoolPeople\\Assets\\Scripts\\Clicker.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Clicker.cs",
+              "ToolTip": "C:\\For games\\WLADZIO CLICKER\\WladzioClicker\\ClickerForCoolPeople\\Assets\\Scripts\\Clicker.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Clicker.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAQwC0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T11:42:36.239Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

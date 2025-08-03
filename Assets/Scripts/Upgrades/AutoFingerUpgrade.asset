@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 773c84c9004ac6d408fbeb4602f8d9c9, type: 3}
+  m_Name: AutoFingerUpgrade
+  m_EditorClassIdentifier: 
+  UpgradeName: Auto "finger"
+  UpgradeCost: 50
+  upgradeCostIncreaseMultiplier: 1.2
+  upgradeSound: {fileID: 8300000, guid: ad5fdab202dca1d4a87dc55670d537c1, type: 3}
+  fingerPrefab: {fileID: 1638788127149358546, guid: 55be9a21afc333c44b0aa8b7f9bd7a61, type: 3}
+  fingerSpawnRadius: 2

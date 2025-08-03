@@ -2,29 +2,26 @@ using UnityEngine;
 
 public class Finger : MonoBehaviour
 {
-    [SerializeField] float clickAmount;
-    [SerializeField] float clickCooldown;
-    Clicker clicker;
-
+    public float clickAmount = 1;
+    [SerializeField] float clickCooldown = 1;
+    float clickTimer;
     private void Start()
     {
-        clicker = GameObject.FindFirstObjectByType<Clicker>();
+        clickTimer = clickCooldown;
     }
 
-    float clickTimer;
-
-    private void Update()
+    public void OnUpdate(Clicker clicker)
     {
         clickTimer -= Time.deltaTime;
 
         if (clickTimer <= 0)
         {
-            Click();
+            Click(clicker);
             clickTimer = clickCooldown;
         }
     }
-    void Click()
+    void Click(Clicker clicker)
     {
-        clicker.Click(clickAmount);
+        clicker.ClickAndDamage(clickAmount);
     }
 }

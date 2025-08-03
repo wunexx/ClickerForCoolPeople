@@ -1,64 +1,53 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class UpgradeManager : MonoBehaviour
 {
+    [Header("Other")]
     [SerializeField] Clicker clicker;
+    [SerializeField] Upgrade[] allUpgrades;
+    [SerializeField] Transform upgradeParent;
+    [SerializeField] GameObject upgradeUIObjectPrefab;
+    List<GameObject> upgradeUIObjects = new List<GameObject>();
+
     [Header("Sounds")]
     [SerializeField] AudioSource audioSource;
-    [SerializeField] AudioClip upgradeSound;
 
-    [Header("Upgrade 1")]
-    [SerializeField] float upgrade1amount;
-    [SerializeField] float upgrade1Cost;
-    [SerializeField] TextMeshProUGUI upgrade1CostText;
-
-    [Header("Upgrade 2")]
-    [SerializeField] GameObject fingerPrefab;
-    [SerializeField] float fingerUpgradeCost;
-    [SerializeField] TextMeshProUGUI fingerUpgradeCostText;
-    [SerializeField] float fingerSpawnRadius;
+    private Upgrade[] runtimeUpgrades;
 
     private void Start()
     {
-        upgrade1CostText.text = $"Cost: {upgrade1Cost}";
-        fingerUpgradeCostText.text = $"Cost: {fingerUpgradeCost}";
-    }
-    public void Upgrade1()
-    {
-        if (clicker.CanSubtract(upgrade1Cost))
+        runtimeUpgrades = new Upgrade[allUpgrades.Length];
+        for (int i = 0; i < allUpgrades.Length; i++)
         {
-            PlaySound();
-
-            clicker.Subtract(upgrade1Cost);
-
-            clicker.UpgradeClickAmount(upgrade1amount);
+            runtimeUpgrades[i] = Instantiate(allUpgrades[i]);
+            CreateUpgradeUI(runtimeUpgrades[i]);
         }
     }
-    public void Upgrade2()
+    void CreateUpgradeUI(Upgrade upgrade)
     {
-        if (clicker.CanSubtract(fingerUpgradeCost))
-        {
-            PlaySound();
+        GameObject upgradeObject = Instantiate(upgradeUIObjectPrefab, Vector2.zero, Quaternion.identity, upgradeParent);
+        upgradeUIObjects.Add(upgradeObject);
 
-            clicker.Subtract(fingerUpgradeCost);
+        TextMeshProUGUI upgradeName =  upgradeObject.GetComponentInChildren<TextMeshProUGUI>();
+        upgradeName.text = upgrade.UpgradeName;
 
-            Vector2 randomDir = Random.insideUnitCircle.normalized;
-            Vector2 finalPos = (Vector2)transform.position + randomDir * fingerSpawnRadius;
+        Button upgradeButton = upgradeObject.GetComponentInChildren<Button>();
+        upgradeButton.onClick.AddListener(() => upgrade.OnUpgrade(audioSource));
 
-            Vector2 rotDirection = ((Vector2)transform.position - finalPos).normalized;
-
-            float angle = Mathf.Atan2(rotDirection.y, rotDirection.x) * Mathf.Rad2Deg;
-
-            Quaternion targetRotation = Quaternion.AngleAxis(angle - 90f, Vector3.forward);
-
-            Instantiate(fingerPrefab, finalPos, targetRotation);
-        }
+        TextMeshProUGUI upgradeCost = upgradeButton.GetComponentInChildren<TextMeshProUGUI>();
+        upgradeCost.text = $"Cost: {upgrade.UpgradeCost}";
     }
-    void PlaySound()
+    public void UpdateUpgradeUIs()
     {
-        audioSource.pitch = Random.Range(0.8f, 1.2f);
-        audioSource.PlayOneShot(upgradeSound);
+        for (int i = 0; i < allUpgrades.Length; i++)
+        {
+            Button upgradeButton = upgradeUIObjects[i].GetComponentInChildren<Button>();
+
+            TextMeshProUGUI upgradeCost = upgradeButton.GetComponentInChildren<TextMeshProUGUI>();
+            upgradeCost.text = $"Cost: {runtimeUpgrades[i].UpgradeCost}";
+        }
     }
 }

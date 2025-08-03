@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c3c043453385284f935c4c969cc4af3, type: 3}
+  m_Name: AutoFingerClickAmount
+  m_EditorClassIdentifier: 
+  UpgradeName: Auto "finger" click amount
+  UpgradeCost: 100
+  upgradeCostIncreaseMultiplier: 1.2
+  upgradeSound: {fileID: 8300000, guid: ad5fdab202dca1d4a87dc55670d537c1, type: 3}
+  additionalClickAmount: 2
