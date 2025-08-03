@@ -23,6 +23,9 @@ sysinfo.txt
 *.unitypackage
 
 # Exclude ALL other builds but keep our WebBuild
+# Ignore all Build folders except docs/Build
 [Bb]uild/
 [Bb]uilds/
+!docs/Build/
+!docs/Build/**
 !WebBuild/
