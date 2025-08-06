@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99a4680698625304da1020d78e7def67, type: 3}
+  m_Name: GeorgeDroyd
+  m_EditorClassIdentifier: 
+  Name: George Droyd
+  Sprite: {fileID: 21300000, guid: 0345f0c166ea26f47ba47a32d1caea8e, type: 3}
+  Health: 5000
+  DeathSounds:
+  - {fileID: 8300000, guid: 671c6a0ee55d92d4cabac0286d498dd4, type: 3}
+  DamageSounds:
+  - {fileID: 8300000, guid: 82dbe561666764f4eb89940ce3e1e23e, type: 3}
+  BackgroundMusic: {fileID: 8300000, guid: 411be4185568e9b4fb17863688925d56, type: 3}
+  DeathReward: 10000
+  DamageEffects:
+  - {fileID: 4973306155824586756, guid: 2d27dcd9d5ecdb1408588730804bd84e, type: 3}
+  DeathEffects:
+  - {fileID: 4973306155824586756, guid: eb3381943e369774caa943fbf4ed7e99, type: 3}

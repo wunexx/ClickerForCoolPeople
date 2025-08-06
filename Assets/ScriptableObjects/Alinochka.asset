@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99a4680698625304da1020d78e7def67, type: 3}
+  m_Name: Alinochka
+  m_EditorClassIdentifier: 
+  Name: Alinochka
+  Sprite: {fileID: 21300000, guid: fc13209ae54dda649ba227279cb7c58c, type: 3}
+  Health: 10000
+  DeathSounds:
+  - {fileID: 8300000, guid: 00340e736c9f7d34db44e2ff86c2af53, type: 3}
+  - {fileID: 8300000, guid: db46dbc9afd314140ab02905fa20b012, type: 3}
+  - {fileID: 8300000, guid: 995d08f1da26847438818c73330fd4a9, type: 3}
+  DamageSounds:
+  - {fileID: 8300000, guid: 6f309db75c976b94896885df1ecea64b, type: 3}
+  BackgroundMusic: {fileID: 8300000, guid: 350f80d6adf3a454bbf651b2e484ffc2, type: 3}
+  DeathReward: 20000
+  DamageEffects:
+  - {fileID: 5432502997183535976, guid: 06b5a39895fa50940b94ecaac4ac424b, type: 3}
+  DeathEffects:
+  - {fileID: 4973306155824586756, guid: eb3381943e369774caa943fbf4ed7e99, type: 3}

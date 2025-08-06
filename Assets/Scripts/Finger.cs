@@ -4,6 +4,7 @@ public class Finger : MonoBehaviour
 {
     public float clickAmount = 1;
     [SerializeField] float clickCooldown = 1;
+    [SerializeField] Animator animator;
     float clickTimer;
     private void Start()
     {
@@ -22,6 +23,7 @@ public class Finger : MonoBehaviour
     }
     void Click(Clicker clicker)
     {
-        clicker.ClickAndDamage(clickAmount);
+        animator.SetTrigger("Click");
+        clicker.Click(clickAmount);
     }
 }

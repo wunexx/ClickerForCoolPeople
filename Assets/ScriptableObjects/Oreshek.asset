@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99a4680698625304da1020d78e7def67, type: 3}
+  m_Name: Oreshek
+  m_EditorClassIdentifier: 
+  Name: Oreshek
+  Sprite: {fileID: 21300000, guid: 212e955104c8a64419c8e63c88923895, type: 3}
+  Health: 50000
+  DeathSounds:
+  - {fileID: 8300000, guid: 8ce63bde6c06a21478ec578ceb149c0b, type: 3}
+  DamageSounds:
+  - {fileID: 8300000, guid: fe619adca03ffde43b17dda9aa675671, type: 3}
+  BackgroundMusic: {fileID: 8300000, guid: 4c5746dd5094f86428190f3a21e45897, type: 3}
+  DeathReward: 100000
+  DamageEffects:
+  - {fileID: 4973306155824586756, guid: 4e95bf9c90c54724487ccec0c15a8580, type: 3}
+  DeathEffects:
+  - {fileID: 4973306155824586756, guid: eb3381943e369774caa943fbf4ed7e99, type: 3}
