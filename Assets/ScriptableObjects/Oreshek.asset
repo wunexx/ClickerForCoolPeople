@@ -16,7 +16,9 @@ MonoBehaviour:
   Sprite: {fileID: 21300000, guid: 212e955104c8a64419c8e63c88923895, type: 3}
   Health: 50000
   DeathSounds:
-  - {fileID: 8300000, guid: 8ce63bde6c06a21478ec578ceb149c0b, type: 3}
+  - {fileID: 8300000, guid: aab7cb6b26966fb43b8e9349491b51c4, type: 3}
+  - {fileID: 8300000, guid: d0fad1c9843c3444ea0b22890aca161c, type: 3}
+  - {fileID: 8300000, guid: 5cc2105324dc44d4aa16df302a917cb5, type: 3}
   DamageSounds:
   - {fileID: 8300000, guid: fe619adca03ffde43b17dda9aa675671, type: 3}
   BackgroundMusic: {fileID: 8300000, guid: 4c5746dd5094f86428190f3a21e45897, type: 3}
